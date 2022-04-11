@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><b>Amount</b></td>
+        <td><b>FromCurrency</b></td>
+        <td><b>To Currency</b></td>
+    </tr>
+    <tr>
+        <td><input id="cho" type="number"></td>
+        <td>
+            <select id="ngu">
+                <option value="vn" >VietNam</option>
+                <option value="my">American</option>
+            </select>
+        </td>
+        <td>
+            <select id="dot">
+                <option value="dollar">USD</option>
+                <option value="vietnamdong">VND</option>
+            </select>
+        </td>
+        <td><button type="button" onclick="abcd()">Conver</button></td>
+    </tr>
+    <h1 id="oy"></h1>
+   <script>
+       const zzy =30000
+       function abcd() {
+           let vnaa = document.getElementById('ngu').value;
+           let usaa = document.getElementById('dot').value;
+           let asd = parseInt(document.getElementById('cho').value);
+           if (vnaa == 'vn' && usaa == 'dollar') {
+               let aids = asd / zzy;
+               document.getElementById('oy').innerHTML=''+aids;
+           }
+           if (vnaa == 'my' && usaa == 'vietnamdong') {
+               let aids = asd * zzy;
+               document.getElementById('oy').innerHTML = '' + aids;
+           }
+       }
+   </script>
+</table>
+</body>
+</html>
+
+
+
