@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=(parseInt(prompt("nhập cạnh a")));
+    let b=(parseInt(prompt("nhập cạnh b")));
+    let c=(parseInt(prompt("nhập cạnh c")));
+    let canha=(a+b)>c;
+    let canhb=(b+c)>a;
+    let canhc=(a+c)>b;
+    if (canha&&canhb&&canhc){
+        alert("là 3 cạnh của tam giác");
+    }
+    else{
+        alert("không phải 3 cạnh tam giác");
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let electric=(parseInt(prompt("Số chữ điện trong 1 tháng:")));
+    if (electric <= 50) {
+        let x = electric * 1.678;
+        alert(x);
+    }else if (electric <=100 && electric >=51){
+        let x = electric *1.734;
+        alert(x);
+    }else if (electric <=200 && electric >=101) {
+        let x = electric * 2.014;
+        alert(x);
+    }else if (electric <=300 && electric >=201) {
+        let x = electric * 2.536;
+        alert(x);
+    }else if (electric <=400 && electric >=301) {
+        let x = electric * 2.834;
+        alert(x);
+    }else  (electric >401)
+    {
+        let x = electric * 2.927;
+        alert(x);
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('a'))
+    let b = parseInt(prompt('b'))
+    let c = parseInt(prompt('c'))
+    let delta =(b*b)-4*(a*c)
+    if(delta < 0){
+        alert("vô nghiệm ");
+    }
+    else if (delta === 0){
+       let x = -b/(2*a)
+        alert("phương trình có nghiệm kép x1 = x2"+x);
+    }
+    else if (delta >0){
+        let x1;
+        let x2;
+        x1 = (-b + Math.sqrt(d)) / (2*a)
+        x2 = (-b - Math.sqrt(d)) / (2*a)
+        alert ('pt co 2 nghiem la '+x1 +'va' +x2)
+
+
+    }
+</script>
+
+
+</body>
+</html>
