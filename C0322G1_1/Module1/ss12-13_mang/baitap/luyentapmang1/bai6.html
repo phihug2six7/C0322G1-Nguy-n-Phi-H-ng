@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let integer=[]
+    let flag=false
+    let numberV =parseInt(prompt("input one number:"))
+    for(i=0;i<10;i++){
+        integer[i]=parseInt(prompt("input integer"));
+    }
+    for (i=0;i<10;i++){
+        if (numberV===integer[i]) {
+            document.write("NumberV in the array");
+            flag = true;
+            break;
+        }
+    }
+    if (flag === false){
+        document.write("NumberV is not in the array")
+    }
+
+</script>
+
+</body>
+</html>

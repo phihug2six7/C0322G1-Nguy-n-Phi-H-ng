@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let integer=[]
+    let negative=[]
+    for (i=1;i<5;i++){
+        integer[i]=parseInt(prompt("input"))
+    }
+    for (i=1;i<integer.length;i++){
+        if (integer[i]<0){
+            negative.push(integer[i])
+        }
+    }
+    document.write("Các số nguyên âm:"+negative)
+    document.write("Có" +negative.length+ "số nguyên âm trong mảng")
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let integer=[];
+    for (i=0;i<4;i++){
+        integer[i]=parseInt(prompt("input number"));
+    }
+    let first=0
+    let last=integer.length-1
+    while (first<last){
+        let a=integer[first]
+        integer[first]=integer[last]
+        integer[last]=a
+        first++
+        last--
+    }
+    document.write(integer)
+</script>
+</body>
+</html>
