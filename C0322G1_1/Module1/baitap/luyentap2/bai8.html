@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[1,2,3,4];
+    let first=0
+    let last=array.length-first
+    reverse(array)
+    document.write(array)
+    function reverse(array) {
+        for (let i=0;i<array.length;i++){
+            while (first<last) {
+                let a = array[first]
+                array[first] = array[last]
+                array[last] = a
+                first++
+                last--
+            }
+        }
+
+
+    }
+</script>
+
+</body>
+</html>
