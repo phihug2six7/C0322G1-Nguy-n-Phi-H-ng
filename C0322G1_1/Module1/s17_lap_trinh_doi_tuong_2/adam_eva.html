@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight
+        }
+
+        setWeight(weight) {
+            this.weight = weight
+        }
+
+        bite() {
+            this.setWeight(this.weight - 1);
+        }
+    }
+
+    let apple= new Apple(10)
+    document.write("Khối lương quả táo là:"+apple.getWeight()+"<br/>")
+    class Human {
+        constructor(name, sex, weight) {
+            this.name = name;
+            this.sex = sex;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name
+        }
+
+        getSex() {
+            return this.sex
+        }
+
+        getWeight() {
+            return this.weight
+        }
+
+        say(a) {
+           document.write(a)
+        }
+
+        checkApple(Apple) {
+            return apple.weight>0;
+        }
+
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                this.weight++;
+                apple.weight--;
+            } else {
+                document.write("táo đã hết")
+            }
+
+        }
+    }
+
+    let adam = new Human('Adam', 'Male', 65)
+    document.write("Tên:"+adam.getName()+"Giới tính:"+adam.getSex()+"Cân nặng"+adam.getWeight()+"kg"+"<br>")
+    let eva = new Human("Eva", "Female", 50)
+    document.write("Tên:"+eva.getName()+"Giới tính:"+eva.getSex()+"Cân nặng"+eva.getWeight()+"kg"+"<br>")
+    document.write("Câu chuyện ăn táo xin được phép bắt đầu:"+"<br>")
+    for (i=0;i<6;i++){
+        adam.say(" Adam said: ăn táo không em ?"+"<br>");
+        eva.say("Eva said: em ăn anh nhé"+"<br>");
+        eva.eat(apple);
+        document.write("Số lượng quả táo còn lại"+apple.getWeight()+"<br>")
+        document.write("Số cân nặng của Eva tăng lên:"+eva.getWeight()+"kg"+"<br>")
+        eva.say("Eva said : ăn táo không anh"+"<br>")
+        adam.say("Adam said: anh ăn em nhé"+"<br>");
+        adam.eat(apple)
+        document.write("Số lượng quả táo còn lại"+apple.getWeight()+"<br>")
+        document.write("Số cân nặng của Adam tăng lên:"+adam.getWeight()+"kg"+"<br>")
+    }
+
+</script>
+
+</body>
+</html>
